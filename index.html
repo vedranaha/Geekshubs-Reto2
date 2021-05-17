@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="GeeksHubs, dynamic showcase, HTML5, CSS3, JS, ES6, Git">
+    <meta name="author" content="Vedrana Hasanbasic">
+    <meta name="description" content="my second challenge in Bootcamp Frontend React in GeeksHubs Academy">
+    <title>Drag and drop organic shop by Vedrana</title>
+
+    <!-- Bootstrap and CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">Organic market</h1>
+            <p>Drag a product to see its price and if you want to buy it, put it in the basket.<br>You can always return it by draging it back to products area.</p>
+        </header>
+        <div class="row">
+            <div class="col-6">
+                <h4><strong>Fresh products</strong></h4>
+                <div ondrop="drop(event,0)" ondragover="allowDrop(event)"   class="container_organic col-sm" id="organic">  
+                <img src="images/apple.png" draggable="true" ondragstart="drag(event,4)" id="apple" ondragend="end()"/>
+                <img src="images/blueberries.png" draggable="true" ondragstart="drag(event,5)" id="blueberry" ondragend="end()"/>
+                <img src="images/red_currant.png" draggable="true" ondragstart="drag(event,5) "id="red-currant" ondragend="end()"/>
+                <img src="images/strawberry.png" draggable="true" ondragstart="drag(event,4)"id="strawberry" ondragend="end()"/>
+                <img src="images/garlic.png" draggable="true" ondragstart="drag(event,2)"id="garlic" ondragend="end()"/>
+                <img src="images/potato.png" draggable="true" ondragstart="drag(event,2)"id="potato" ondragend="end()">
+                <img src="images/carrot.png" draggable="true" ondragstart="drag(event,3)"id="carrot" ondragend="end()">
+                <img src="images/eggplant.png" draggable="true" ondragstart="drag(event,3)"id="eggplant" ondragend="end()" >
+                <img src="images/cabbage.png" draggable="true" ondragstart="drag(event,3)" id="cabbage" ondragend="end()">
+                <img src="images/artichoke.png" draggable="true" ondragstart="drag(event,5)"id="artichoke" ondragend="end()">
+                <img src="images/pumpkin.png" draggable="true" ondragstart="drag(event,3)"id="pumpkin" ondragend="end()">
+                <img src="images/tomato_orange.png" draggable="true" ondragstart="drag(event,4)" id="tomato-orange" ondragend="end()">
+                <img src="images/red_tomato.png" draggable="true" ondragstart="drag(event,3)" id="tomato" ondragend="end()">
+                <img src="images/green_tomato.png" draggable="true" ondragstart="drag(event,3)" id="tomato-green" ondragend="end()">
+                <img src="images/lettuce.png" draggable="true" ondragstart="drag(event,2)" id="letucce" ondragend="end()">
+                <img src="images/zuchini.png" draggable="true" ondragstart="drag(event,3)" id="zuchini" ondragend="end()">
+                <img src="images/onion.png" draggable="true" ondragstart="drag(event,1)" id="onion" ondragend="end()">
+                <img src="images/beans.png" draggable="true" ondragstart="drag(event,4)" id="beans" ondragend="end()">
+                <img src="images/hot_peppers.png" draggable="true" ondragstart="drag(event,4)" id="chili" ondragend="end()">
+                <img src="images/plums.png" draggable="true" ondragstart="drag(event,3)" id="plums" ondragend="end()">
+                <img src="images/cucumber.png" draggable="true" ondragstart="drag(event,4)" id="cucumber" ondragend="end()">
+                <img src="images/grapes.png" draggable="true" ondragstart="drag(event,2)" id="grapes" ondragend="end()">
+                <img src="images/mint.png" draggable="true" ondragstart="drag(event,2)" id="mint" ondragend="end()">
+                <img src="images/broccoli.png" draggable="true" ondragstart="drag(event,5)" id="broccoli" ondragend="end()">
+                </div>
+            </div>
+            <div class="col-6" >
+                <h4><strong>Your basket</strong></h4>
+                <div class="shopping_basket">
+                    <div ondrop="drop(event, 1)" ondragover="allowDrop(event)"
+                        id="bag">
+                    </div>
+                </div>
+                <div class="bg-light text-danger" id="light">
+                    <span id ="product"></span>
+                    <span id="price"></span> 
+                    <h5>Total: <span id="total">0</span>€</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>  
+</body>
+</html>
