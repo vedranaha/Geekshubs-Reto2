@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(238, 232, 183);
+    font-family: 'Yeon Sung', cursive;
+}
+
+img{
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+h1{
+    color: orangered;
+    text-align: center;
+    padding: 20px;
+}
+
+h4{
+    color: rgb(104, 38, 15);
+}
+
+p{
+    color:rgb(7, 97, 7);
+    text-align: center;
+}
+
+.container_organic{
+    background-image: url('images/wood.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 200px;
+    border-width: 4px;
+    border-radius: 20px;
+}
+
+#bag{
+    width: 100%;
+    min-height: 200px;
+    border-width: 4px;
+    border-radius: 50px;
+    background-image: url('images/pleteno.jpg');
+    padding:10px;
+    margin-bottom: 10px;
+    border-style:outset;
+}
+
+#light, #total{
+    width: 50%;
+    border-radius: 20px;
+    text-align: center;
+}
