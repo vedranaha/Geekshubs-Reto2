@@ -8,4 +8,4 @@
 ##Author: Vedrana Hasanbasic
 
 Project: 
-https://github.com/vedranaha/Geekshubs-Reto2/
+https://vedranaha.github.io/Geekshubs-Reto2/
