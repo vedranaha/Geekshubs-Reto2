@@ -5,7 +5,7 @@
 
 #### Drag & Drop application for the organic market where you drag articles of the showcase and deposite them into the basket with the total amount of price.
 
-##Author: Vedrana Hasanbasic
+## Author: Vedrana Hasanbasic
 
 Project: 
 https://vedranaha.github.io/Geekshubs-Reto2/
